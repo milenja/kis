@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: tresc;
+    src: url(fonty/Oswald-Regular.ttf);
+}
+
+@font-face {
+    font-family: logo;
+    src: url(fonty/NexaRustScriptL-0.otf);
+}
+
+@font-face {
+    font-family: certyfikat;
+    src: url(fonty/CambriaMath.ttc);
+}
+
+body {
+    margin: 0;
+    background: #25394f;
+}
+
+#calosc {
+    width: 980px;
+    margin: 0 auto;
+    font-family: tresc;
+}
+
+header {
+    background-image: url(grafika/header_korekta_i_styl.jpg);
+    text-align: right;
+    background-size: 100% 100%;
+}
+
+h1 {
+    color: white;
+    margin: 0;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: logo;
+    font-size: 5em;
+    text-shadow: 2px 2px 2px black;
+    padding-right: 250px;
+}
+
+.certyfikat {
+    display: inline-block;
+    background-image: url(grafika/certyfikat.png);
+    background-repeat: no-repeat;
+    height: 261px;
+    width: 201px;
+    padding: 10px 20px 10px 10px;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    vertical-align: middle;
+    font-family: certyfikat;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    width: 16.3%;
+}
+
+nav a {
+    display: block;
+    color: rgb(91, 144, 166);
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.25em;
+}
+
+main {
+    padding: 50px 0;
+    position: relative;
+}
+
+.linki {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.kol {
+    display: inline-block;
+    width: 33%;
+    margin-right: -4px;
+    vertical-align: top;
+}
+
+.kol:nth-child(1) {
+    padding-right: 2%;
+    margin-left: 4px;
+}
+
+.kol:nth-child(2) {
+    padding-right: 1%;
+    padding-left: 1%;
+}
+
+.kol:nth-child(3) {
+    padding-left: 2%;
+}
+
+.kol img {
+    width: 100%;
+}
+
+footer {
+    border-top: 2px solid white;
+    padding-top: 10px;
+    position: relative;
+}
+
+footer img {
+    position: absolute;
+    left: 130px;
+    top: 65px;
+}
+
+a:link, a:visited {
+    color: rgb(91, 144, 166);
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: rgb(57, 133, 165);
+    text-decoration: none;
+}
