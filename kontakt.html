@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <style>
         #srodek {
-            background-image: url(grafika/kontakt_foto.png), url(grafika/tlo_blue.png);
+            background-image: url(grafika/kontakt.jpg), url(grafika/tlo_blue.png);
             background-repeat: repeat-x, repeat-x;
             background-size: auto, auto 100%;
             color: white;
@@ -32,7 +32,16 @@
         </header>
         <div id="srodek" class="rest">
            <main>
-               
+               <div class="kontakt">
+                   <img src="grafika/telefonik_shadow.png" alt=""> <span>605 065 754</span> <img src="grafika/kopertka_shadow.png" alt=""> <span>kontakt@korektaistyl.pl</span>
+               </div>
+               <form action="" method="post">
+                  <p>Prześlij plik tekstowy:</p>
+                   <input type="file" name="plik">
+                   <p>Miejsce na Twój komentarz:</p>
+                   <textarea name="komentarz" cols="70" rows="10"></textarea>
+                   <p><input type="submit" value="wyślij"></p>
+               </form>
            </main>
             <footer>
                 <p>&copy; 2015 korektaikropka.pl | Wszelkie prawa zastrzeżone</p>

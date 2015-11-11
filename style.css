@@ -29,7 +29,7 @@ body {
 }
 
 header {
-    background-image: url(grafika/header_korekta_i_styl.jpg);
+    background-image: url(grafika/header.jpg);
     text-align: right;
     background-size: 100% 100%;
 }
@@ -75,7 +75,7 @@ nav li {
 
 nav a {
     display: block;
-    color: rgb(91, 144, 166);
+    color: #005790;
     padding: 10px 20px;
     text-decoration: none;
     text-align: center;
@@ -89,7 +89,7 @@ main {
 
 .linki {
     position: absolute;
-    bottom: 0;
+    top: 200px;
     right: 0;
 }
 
@@ -116,6 +116,36 @@ main {
 
 .kol img {
     width: 100%;
+}
+
+.odstep {
+    height: 20px;
+}
+
+.kontakt img {
+    vertical-align: middle;
+}
+
+.kontakt span {
+    vertical-align: middle;
+    margin: 0 25px;
+}
+
+.szescdziesiat {
+    width: 60%;
+}
+
+.czterdziesci {
+    width: 40%;
+    float: right;
+}
+
+.zle {
+    color: #f80449;
+}
+
+.dobrze {
+    color: #19d870;
 }
 
 footer {
