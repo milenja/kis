@@ -43,7 +43,8 @@ h1 {
     font-family: logo;
     font-size: 5em;
     text-shadow: 2px 2px 2px black;
-    padding-right: 250px;
+    padding-right: 280px;
+    font-weight: normal;
 }
 
 .certyfikat {
@@ -56,6 +57,7 @@ h1 {
     text-align: center;
     color: white;
     font-size: 1.5em;
+    font-style: italic;
     vertical-align: middle;
     font-family: certyfikat;
 }
@@ -142,10 +144,15 @@ main {
 
 .zle {
     color: #f80449;
+    text-shadow:2px 3px 6px black;
 }
 
 .dobrze {
     color: #19d870;
+    text-shadow:2px 3px 6px black;
+}
+.shadow {
+    text-shadow:2px 3px 6px black;
 }
 
 footer {
