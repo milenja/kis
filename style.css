@@ -43,7 +43,7 @@ h1 {
     font-family: logo;
     font-size: 5em;
     text-shadow: 2px 2px 2px black;
-    padding-right: 280px;
+    padding-right: 320px;
     font-weight: normal;
 }
 
@@ -53,11 +53,12 @@ h1 {
     background-repeat: no-repeat;
     height: 261px;
     width: 201px;
-    padding: 10px 20px 10px 10px;
+    padding: 20px 20px 10px 10px;
     text-align: center;
     color: white;
     font-size: 1.5em;
     font-style: italic;
+    text-shadow: 2px 2px 2px black;
     vertical-align: middle;
     font-family: certyfikat;
 }
@@ -168,11 +169,11 @@ footer img {
 }
 
 a:link, a:visited {
-    color: rgb(91, 144, 166);
+    color: rgb(151, 144, 166);
     text-decoration: none;
 }
 
 a:hover, a:active {
-    color: rgb(57, 133, 165);
+    color: rgb(57, 333, 250);
     text-decoration: none;
 }
