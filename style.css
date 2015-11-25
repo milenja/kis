@@ -92,7 +92,7 @@ main {
 
 .linki {
     position: absolute;
-    top: 360px;
+    top: 200px;
     right: 0;
 }
 
@@ -125,6 +125,14 @@ main {
     height: 20px;
 }
 
+.przerwa {
+    height: 8px;
+}
+
+.spacja {
+    width: 50px;
+}
+
 .kontakt img {
     vertical-align: middle;
 }
@@ -139,19 +147,20 @@ main {
 }
 
 .czterdziesci {
+    position: absolute;
     width: 40%;
-    float: right;
+    right: 0;
+    top: 30px;
 }
 
 .zle {
     color: #f80449;
-    text-shadow:2px 3px 6px black;
 }
 
 .dobrze {
     color: #19d870;
-    text-shadow:2px 3px 6px black;
 }
+
 .shadow {
     text-shadow:2px 3px 6px black;
 }
