@@ -9,12 +9,13 @@
 
 @font-face {
     font-family: logo;
-    src: url(fonty/NexaRustScriptL-0.otf);
+    src: url(fonty/GreatVibes-Regular.otf);
 }
+
 
 @font-face {
     font-family: certyfikat;
-    src: url(fonty/CambriaMath.ttc);
+    src: url(fonty/GreatVibes-Regular.otf);
 }
 
 body {
@@ -29,7 +30,7 @@ body {
 }
 
 header {
-    background-image: url(grafika/header.jpg);
+    background-image: url(grafika/h2.jpg);
     text-align: right;
     background-size: 100% 100%;
 }
@@ -43,13 +44,14 @@ h1 {
     font-family: logo;
     font-size: 5em;
     text-shadow: 2px 2px 2px black;
-    padding-right: 320px;
+    padding-top: 50px;
+    padding-right: 390px;
     font-weight: normal;
 }
 
 .certyfikat {
     display: inline-block;
-    background-image: url(grafika/certyfikat.png);
+    background-image: url(grafika/cert.png);
     background-repeat: no-repeat;
     height: 261px;
     width: 201px;
@@ -58,9 +60,10 @@ h1 {
     color: white;
     font-size: 1.5em;
     font-style: italic;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 3px 3px 3px black;
     vertical-align: middle;
     font-family: certyfikat;
+    font-weight: lighter;
 }
 
 nav ul {
@@ -185,6 +188,7 @@ a:link, a:visited {
 a:hover, a:active {
     color: rgb(57, 333, 250);
     text-decoration: none;
+    text-shadow:2px 3px 6px black;
 }
 
 form textarea {
@@ -200,7 +204,7 @@ form textarea {
     display:block;
 }
 
-input[type="submit"] {
+input[type=submit] {
 	background: rgb(151, 144, 166);
 	border-radius:5px;
 	padding:5px;
