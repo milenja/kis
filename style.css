@@ -18,6 +18,11 @@
     src: url(fonty/GreatVibes-Regular.otf);
 }
 
+@font-face {
+    font-family: naglowek;
+    src: url(fonty/GreatVibes-Regular.otf);
+}
+
 body {
     margin: 0;
     background: #25394f;
@@ -47,6 +52,13 @@ h1 {
     padding-top: 50px;
     padding-right: 390px;
     font-weight: normal;
+}
+
+h2 {
+    font-family: naglowek;
+    font-size: 2em;
+    font-weight: normal;
+    
 }
 
 .certyfikat {
@@ -95,7 +107,7 @@ main {
 
 .linki {
     position: absolute;
-    top: 200px;
+    top: 190px;
     right: 0;
 }
 
