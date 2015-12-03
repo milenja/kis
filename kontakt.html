@@ -35,8 +35,29 @@
                <div class="kontakt">
                    <img src="grafika/telefonik_shadow.png" alt=""> <span>605 065 754</span> <img src="grafika/kopertka_shadow.png" alt=""> <span>kontakt@korektaistyl.pl</span>
                </div>
-               <form action="" method="post">
-                  <p>Prześlij plik tekstowy:</p>
+			   <?php
+			   require('phpmailer/class.phpmailer.php');
+			   if(isset($_GET['send']) && $_POST) {
+					$email = new PHPMailer();
+					$email->From = $_POST['email'];
+					$email->FromName = $_POST['imie'];
+					$email->Subject = 'Kontakt ze strony korektaistyl.pl';
+					$email->Body = $_POST['komentarz'];
+					$email->AddAddress('milenja@gazeta.pl');
+					if($_FILES) {
+						$plik = $_FILES['plik']['tmp_name'];
+						$nazwaPliku = $_FILES['plik']['name'];
+						$email->AddAttachment($plik, $nazwaPliku);
+					}
+					return $email->Send();
+			   }
+			   ?>
+               <form action="?send=1" method="post" enctype="multipart/form-data">
+					<p>Imię:</p>
+					<input type="text" name="imie">
+					<p>Adres email:</p>
+					<input type="text" name="email">
+                  <p>Prześlij plik tekstowy (opcjonalnie):</p>
                    <input type="file" name="plik">
                    <p>Miejsce na Twój komentarz:</p>
                    <textarea name="komentarz" cols="70" rows="10"></textarea>
