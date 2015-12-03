@@ -9,12 +9,18 @@
 
 @font-face {
     font-family: logo;
-    src: url(fonty/NexaRustScriptL-0.otf);
+    src: url(fonty/GreatVibes-Regular.otf);
 }
+
 
 @font-face {
     font-family: certyfikat;
-    src: url(fonty/CambriaMath.ttc);
+    src: url(fonty/GreatVibes-Regular.otf);
+}
+
+@font-face {
+    font-family: naglowek;
+    src: url(fonty/GreatVibes-Regular.otf);
 }
 
 body {
@@ -43,13 +49,21 @@ h1 {
     font-family: logo;
     font-size: 5em;
     text-shadow: 2px 2px 2px black;
-    padding-right: 320px;
+    padding-top: 50px;
+    padding-right: 390px;
     font-weight: normal;
+}
+
+h2 {
+    font-family: naglowek;
+    font-size: 2em;
+    font-weight: normal;
+    
 }
 
 .certyfikat {
     display: inline-block;
-    background-image: url(grafika/certyfikat.png);
+    background-image: url(grafika/cert.png);
     background-repeat: no-repeat;
     height: 261px;
     width: 201px;
@@ -58,9 +72,10 @@ h1 {
     color: white;
     font-size: 1.5em;
     font-style: italic;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 3px 3px 3px black;
     vertical-align: middle;
     font-family: certyfikat;
+    font-weight: lighter;
 }
 
 nav ul {
@@ -92,7 +107,7 @@ main {
 
 .linki {
     position: absolute;
-    top: 360px;
+    top: 190px;
     right: 0;
 }
 
@@ -125,6 +140,14 @@ main {
     height: 20px;
 }
 
+.przerwa {
+    height: 8px;
+}
+
+.spacja {
+    width: 50px;
+}
+
 .kontakt img {
     vertical-align: middle;
 }
@@ -139,19 +162,20 @@ main {
 }
 
 .czterdziesci {
+    position: absolute;
     width: 40%;
-    float: right;
+    right: 0;
+    top: 50px;
 }
 
 .zle {
     color: #f80449;
-    text-shadow:2px 3px 6px black;
 }
 
 .dobrze {
     color: #19d870;
-    text-shadow:2px 3px 6px black;
 }
+
 .shadow {
     text-shadow:2px 3px 6px black;
 }
@@ -176,4 +200,28 @@ a:link, a:visited {
 a:hover, a:active {
     color: rgb(57, 333, 250);
     text-decoration: none;
+    text-shadow:2px 3px 6px black;
+}
+
+form textarea {
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    padding:5px;
+    vertical-align:top;
+    border-radius:5px;
+    background:#fff;
+    font-size:13px;
+    font-family:'Open Sans', sans-serif;
+    display:block;
+}
+
+input[type=submit] {
+	background: rgb(151, 144, 166);
+	border-radius:5px;
+	padding:5px;
+	font-size: 17px;
+	color: #fff;
+	align-items: center;
+    cursor:pointer;
 }
