@@ -25,7 +25,7 @@
                     <li><a href="redakcja.html">oferta redakcji</a></li>
                     <li><a href="copywriting.html">copywriting</a></li>
                     <li><a href="cennik.html">cennik</a></li>
-                    <li><a href="kontakt.html">kontakt</a></li>
+                    <li><a href="kontakt.php">kontakt</a></li>
                 </ul>
             </nav>
         </header>
@@ -49,7 +49,11 @@
 						$nazwaPliku = $_FILES['plik']['name'];
 						$email->AddAttachment($plik, $nazwaPliku);
 					}
-					return $email->Send();
+					if($email->Send()) {
+					    echo '<div class="sukces">Wiadomość wysłana poprawnie</div>';
+					} else {
+					    echo '<div class="blad">Błąd podczas wysyłania wiadomości</div>';
+					}
 			   }
 			   ?>
                <form action="?send=1" method="post" enctype="multipart/form-data">
