@@ -25,7 +25,7 @@
                     <li><a href="redakcja.html">oferta redakcji</a></li>
                     <li><a href="copywriting.html">copywriting</a></li>
                     <li><a href="cennik.html">cennik</a></li>
-                    <li><a href="kontakt.html">kontakt</a></li>
+                    <li><a href="kontakt.php">kontakt</a></li>
                 </ul>
             </nav>
         </header>
