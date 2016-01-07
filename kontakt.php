@@ -39,7 +39,7 @@
 			   require('phpmailer/class.phpmailer.php');
 			   if(isset($_GET['send']) && $_POST) {
 					$email = new PHPMailer();
-					$email->From = 'chuj@kurwa.dupa';
+					$email->From = 'klient@klient.text';
                     $email->addReplyTo($_POST['email'], $_POST['imie']);
 					$email->FromName = 'Korekta i styl';
 					$email->Subject = 'Kontakt ze strony korektaistyl.pl';
