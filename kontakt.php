@@ -44,7 +44,7 @@
 					$email->FromName = 'Korekta i styl';
 					$email->Subject = 'Kontakt ze strony korektaistyl.pl';
 					$email->Body = $_POST['komentarz'];
-					$email->AddAddress('milenja@gazeta.pl');
+					$email->AddAddress('milena.witkowska@tlen.pl');
 					if($_FILES) {
 						$plik = $_FILES['plik']['tmp_name'];
 						$nazwaPliku = $_FILES['plik']['name'];
