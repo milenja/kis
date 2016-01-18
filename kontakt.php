@@ -39,6 +39,13 @@
 			   require('phpmailer/class.phpmailer.php');
 			   if(isset($_GET['send']) && $_POST) {
 					$email = new PHPMailer();
+                    $mail->isSMTP();
+                    $mail->Host = 'smtp.tlen.pl'; 
+                    $mail->SMTPAuth = true;
+                    $mail->Username = UNAME;
+                    $mail->Password = UPASS;
+                    $mail->SMTPSecure = 'SSLTLS';      
+                    $mail->Port = 465; 
 					$email->From = 'klient@klient.text';
                     $email->addReplyTo($_POST['email'], $_POST['imie']);
 					$email->FromName = 'Korekta i styl';
