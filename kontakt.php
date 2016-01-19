@@ -39,7 +39,14 @@
 			   require('phpmailer/class.phpmailer.php');
                require('phpmailer/PHPMailerAutoload.php');   
 			   if(isset($_GET['send']) && $_POST) {
-					$email = new PHPMailer(); 
+					$email = new PHPMailer();
+                    $email->isSMTP();
+                    $email->Host = 'poczta.o2.pl';
+                    $email->SMTPAuth = true;
+                    $email->Username = UNAME;
+                    $email->Password = UPASS;
+                    $email->SMTPSecure = 'SSL';
+                    $email->Port = 465; 
 					$email->From = 'klient@klient.text';
                     $email->addReplyTo($_POST['email'], $_POST['imie']);
 					$email->FromName = 'Korekta i styl';
