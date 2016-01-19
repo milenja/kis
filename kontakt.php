@@ -37,6 +37,7 @@
                </div>
 			   <?php
 			   require('phpmailer/class.phpmailer.php');
+               require('phpmailer/PHPMailerAutoload.php');   
 			   if(isset($_GET['send']) && $_POST) {
 					$email = new PHPMailer();
                     $email->isSMTP();
