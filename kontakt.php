@@ -42,13 +42,14 @@
 			   if(isset($_GET['send']) && $_POST) {
 					$email = new PHPMailer();
                     $email->isSMTP();
+					// $email->SMTPDebug = 2;
                     $email->Host = 'poczta.o2.pl';
                     $email->SMTPAuth = true;
                     $email->Username = UNAME;
                     $email->Password = UPASS;
-                    $email->SMTPSecure = 'SSL';
+                    $email->SMTPSecure = 'ssl';
                     $email->Port = 465; 
-					$email->From = 'klient@klient.text';
+					$email->From = 'milena.witkowska@tlen.pl';
                     $email->addReplyTo($_POST['email'], $_POST['imie']);
 					$email->FromName = 'Korekta i styl';
 					$email->Subject = 'Kontakt ze strony korektaistyl.pl';
