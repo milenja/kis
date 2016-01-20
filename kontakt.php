@@ -36,6 +36,7 @@
                    <img src="grafika/telefonik_shadow.png" alt=""> <span>608 065 754</span> <img src="grafika/kopertka_shadow.png" alt=""> <span>kontakt@korektaistyl.pl</span>
                </div>
 			   <?php
+			   require('config.php');
 			   require('phpmailer/class.phpmailer.php');
                require('phpmailer/PHPMailerAutoload.php');   
 			   if(isset($_GET['send']) && $_POST) {
